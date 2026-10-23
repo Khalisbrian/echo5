@@ -1,0 +1,231 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:Georgia, "Times New Roman", serif;
+
+    color:white;
+
+    overflow-x:hidden;
+
+    background:linear-gradient(135deg,#552000,#a13b00,#f08d2a);
+
+}
+
+header{
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.sun{
+
+    width:70px;
+
+}
+
+header h1{
+
+
+
+    font-size:64px;
+
+    color:#fff6de;
+
+}
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:75vh;
+
+}
+
+.bio{
+
+    width:550px;
+
+    max-width:90%;
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:18px;
+
+    padding:40px;
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.bio h2{
+    text-align:center;
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.foto-profile{
+
+    display:block;
+
+    width:180px;
+    height:180px;
+
+    margin:20px auto;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #fff;
+
+    box-shadow:0 0 20px rgba(0,0,0,.35);
+
+}
+
+.bio p{
+
+    margin:10px 0;
+
+}
+
+.bio ul{
+
+    margin-left:20px;
+
+    margin-top:10px;
+
+}
+
+.quote {
+
+    margin-top:25px;
+
+    font-style:italic;
+
+    color:#ffe9c4;
+
+}
+
+.sword{
+
+    width:180px;
+
+    display:block;
+
+    margin:40px auto 0;
+
+}
+
+.right-side{
+
+    position:absolute;
+
+    right:-140px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    z-index:1;
+
+}
+
+.big-fire{
+
+    width:620px;
+
+    transform:scaleX(-1);
+
+    opacity:.9;
+
+}
+
+@media(max-width:900px){
+
+.right-side{
+
+display:none;
+
+}
+
+header h1{
+
+font-size:48px;
+
+}
+
+}
+
+.back-btn{
+
+    position:fixed;
+
+    top:30px;
+    left:35px;
+
+    text-decoration:none;
+
+    color:rgba(255,255,255,.8);
+
+    font-size:18px;
+    font-weight:bold;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    padding:10px 18px;
+
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:50px;
+
+    backdrop-filter:blur(8px);
+
+    background:rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    color:#fff;
+
+    background:rgba(255,255,255,.15);
+
+    transform:translateX(-6px);
+
+    box-shadow:0 0 15px rgba(255,255,255,.2);
+
+}
+
+.back-btn::before{
+
+    content:"← ";
+
+    transition:.3s;
+
+}
+
+.back-btn:hover::before{
+
+    margin-right:8px;
+
+}
