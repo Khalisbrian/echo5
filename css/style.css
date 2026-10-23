@@ -1,0 +1,32 @@
+nav{
+    * {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(210, 62%, 51%);
+}
+
+.navbar {
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(244, 240, 240);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: rgb(102, 255, 0);
+}
+}
