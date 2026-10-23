@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - Artha Dharmayasa</title>
+  <!-- Path CSS ke artha.css -->
+  <link rel="stylesheet" href="../css/artha.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Bagian Hero Atas -->
+  <header class="profile-hero">
+    <div class="hero-content">
+      <h3 class="greeting">HELLO THERE, I'M ARTHA DHARMAYASA!</h3>
+      <h1 class="headline">COMPUTER<br>SCIENCE STUDENT</h1>
+      <p class="bio">
+        First-year Computer Science student at Ganesha University of Education Undiksha. 
+        Exploring clean code, data structures and AI innovation!
+      </p>
+      
+      <!-- Tombol Aksi -->
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-glow">VIEW WORKS</a>
+        <a href="javascript:void(0)" id="btn-contact" class="btn btn-glow">CONTACT ME</a>
+      </div>
+    </div>
+
+    <!-- Foto Profil dengan Bingkai Neon -->
+    <div class="hero-avatar">
+      <div class="avatar-ring">
+        <img src="../asset/Foto-Profil.jpg" alt="Foto Profil Artha">
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal / Pop-Up Kontak -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>CONTACT ME SOON!</h3>
+        <button id="btn-close-modal" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <a href="mailto:bagus.kade.artha@student.undiksha.ac.id" class="contact-item">
+          <div>
+            <strong>Email Student</strong>
+            <p>bagus.kade.artha@student.undiksha.ac.id</p>
+          </div>
+        </a>
+        <a href="https://github.com/rhinzzukie" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <div>
+            <strong>GitHub</strong>
+            <p>github.com/rhinzzukie</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bagian Kartu (Project & Skills) -->
+  <main class="cards-grid">
+    <!-- Kartu Proyek -->
+    <section class="card" id="projects">
+      <div class="card-header">
+        <span class="card-title">1. Project</span>
+        <span class="more-dots" aria-hidden="true">•••</span>
+      </div>
+      <div class="card-preview skill-display">
+        <div class="project-logo-wrap">
+          <img src="../asset/logo-vibecoding.webp" alt="Logo Juara Vibe Coding" style="width: 140px; height: auto; border-radius: 8px; object-fit: contain; display: block;">
+        </div>
+        <div class="skill-tag" style="margin-top: 15px;">JUARAVIBECODING PARTICIPANT</div>
+      </div>
+    </section>
+
+    <!-- Kartu Skills -->
+    <section class="card" id="skills">
+      <div class="card-header">
+        <span class="card-title">2. Skills</span>
+        <span class="more-dots" aria-hidden="true">•••</span>
+      </div>
+      <div class="card-preview skill-display">
+        <div class="c-logo-wrap">
+          <img src="../asset/Logo-C.png" alt="Logo Bahasa C" style="width: 80px; height: 80px; object-fit: contain; display: block; margin: 0 auto;">
+        </div>
+        <div class="skill-tag">C LANGUAGE</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script Interaktivitas -->
+  <script src="../js/artha.js"></script>
+</body>
+</html>
