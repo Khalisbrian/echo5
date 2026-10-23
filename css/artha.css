@@ -108,6 +108,29 @@ body {
   display: block;
 }
 
+/* Navigasi Tombol Kembali - Nuansa Biru */
+.nav-back {
+  margin-bottom: 30px;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #00a8ff; /* Teks warna biru cerah */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: rgba(0, 168, 255, 0.08); /* Latar belakang biru transparan */
+  border: 1px solid rgba(0, 168, 255, 0.3); /* Bingkai biru tipis */
+  box-shadow: 0 0 10px rgba(0, 168, 255, 0.2); /* Efek glow biru samar */
+  transition: all 0.25s ease;
+}
+
+
+
 /* ==================== KARTU SECTION ==================== */
 .cards-grid {
   display: grid;
