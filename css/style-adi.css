@@ -1,0 +1,155 @@
+/* Pengaturan Dasar & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Gambar Laut dengan Overlay Gelap agar Teks Terbaca Jelas */
+body {
+    background-image: url('../asset/ocean.jpg'); /* Sesuaikan nama file gambar laut */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Efek gelap transparan di atas gambar laut */
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Efek Glassmorphism Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+/* Styling Foto Profil */
+.profile-img-box {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #70d6ff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Box Konten Biografi & Kontak */
+.bio-box, .contact-box {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bio-box h2, .contact-box h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 6px;
+    color: #ffd166;
+}
+
+/* Tabel Biodata */
+table {
+    width: 100%;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 5px 0;
+    vertical-align: top;
+}
+
+table td:first-child {
+    width: 30%;
+    color: #e0e0e0;
+}
+
+/* List Pendidikan */
+.edu-list {
+    list-style-type: disc;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.edu-list li {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+/* Bagian Kontak */
+.contact-box p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #f0f0f0;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
