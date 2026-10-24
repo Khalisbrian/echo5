@@ -1,4 +1,4 @@
-# 🚀 Echo5 - Website Profil Kelompok
+#  Echo5 - Website Profil Kelompok
 
 Repositori resmi untuk proyek akhir **IT Bootcamp Web Development**. Website ini dibangun secara kolaboratif oleh **Kelompok 5 (Echo5)** sebagai website portofolio tim yang menampilkan beranda bersama dan halaman profil masing-masing anggota.
 
